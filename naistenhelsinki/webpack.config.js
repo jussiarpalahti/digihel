@@ -1,7 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: path.join(__dirname, '/static_src/js/naistenhelsinki/index.js'),
+  entry: [
+      'whatwg-fetch',
+      path.join(__dirname, '/static_src/js/naistenhelsinki/index.js')],
   output: {
     path: path.join(__dirname, '/static/js/'),
     filename: 'naistenhelsinki.js'
